@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>City Guider</title>
+</head>
+<body>
+    <header>
+        <!-- nav start -->
+        <div class="navbar-fixed">
+          <nav class="blue">
+              <div class="container">
+                  <div class="nav-wrapper">
+                      <a href="#home" class="brand-logo left">City Guiders</a> 
+                      <a href="" class="sidenav-trigger right" data-target="mobile-nav">  <i class="material-icons">menu</i>  
+                      </a>
+                      <ul class="right hide-on-med-and-down">
+                         <li><a href="#home">Home</a></li>
+                         <li><a href="#search">Search</a></li>
+                         <li><a href="#popular">Popular Places</a></li>
+                         <li><a href="#gallery">Gallery</a></li>
+                         <li><a href="#contact">Contact</a></li>
+
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <ul class="sidenav" id="mobile-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#popular">Popular Places</a></li>
+          <li><a href="#gallery">Gallary</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+       </ul>
+        <!-- nav ends -->
+
+            <!-- carousel start-->
+               
+            <!-- carousel ends-->
+
+        </header>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+
+            const sideNav = document.querySelector('.sidenav');
+            M.Sidenav.init(sideNav , {
+              edge:"right"
+            });
+
+        </script>
+</body>
+</html>
