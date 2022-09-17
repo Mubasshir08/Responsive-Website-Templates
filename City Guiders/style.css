@@ -36,3 +36,35 @@
   .input-field .prefix.active {
     color: #2196F3;
   }
+
+  /* autocomplete dropdown color */
+  .dropdown-content li>a, .dropdown-content li>span {
+    color: #2196F3 !important;
+  }
+
+  .card{
+    width: 250px
+  }
+  .card-image img{
+    height:150px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+        margin: 10px auto;
+    }
+  }
+
+  .red{
+    background-color: #2196F3 !important;
+  }
+
+  @media screen and (min-width: 600px) {  
+    .card-row{
+      margin-left: 3% !important;
+    }
+  }
+
+  .card-title{
+    font-weight: 400 !important;
+  }

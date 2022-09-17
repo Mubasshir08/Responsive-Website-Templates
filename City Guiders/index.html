@@ -28,21 +28,21 @@
                          <li><a href="#popular">Popular Places</a></li>
                          <li><a href="#gallery">Gallery</a></li>
                          <li><a href="#contact">Contact</a></li>
-
-                      </ul>
+                        </ul>
+                      </div>
                   </div>
-              </div>
-          </nav>
-      </div>
-      <ul class="sidenav" id="mobile-nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#search">Search</a></li>
-          <li><a href="#popular">Popular Places</a></li>
-          <li><a href="#gallery">Gallary</a></li>
-          <li><a href="#contact">Contact</a></li>
+              </nav>
+          </div>
 
-       </ul>
+          <ul class="sidenav" id="mobile-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#search">Search</a></li>
+              <li><a href="#popular">Popular Places</a></li>
+              <li><a href="#gallery">Gallary</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
         <!-- nav ends -->
+      </header>
 
             <!-- carousel start-->
             <div class="slider">
@@ -74,6 +74,7 @@
             <!-- carousel ends-->
 
             <!-- search start -->
+            <h3 class="center-align"> Search </h3>
               <div class="section">
                 <div class="row">
                     <div class="container">
@@ -81,7 +82,7 @@
                           <div class="row">
                             <div class="input-field col s6">
                               <i class="material-icons prefix">search</i>
-                              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                              <textarea id="icon_prefix2" class="materialize-textarea autocomplete" id="autocomplete"></textarea>
                               <label for="icon_prefix2">Search</label>
                             </div>
                           </div>
@@ -91,7 +92,89 @@
               </div>
             <!-- search ends -->
 
-        </header>
+            <!-- Popular Places Start -->
+                <h3 class="center-align"> Popular Places </h3>
+                <div class="section">
+                  <div class="container">
+                    <div class="row card-row">
+                      <div class="col s12 m4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/city-1.avif">
+                            <span class="card-title">Kushtia</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s12 m4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/city-2.avif">
+                            <span class="card-title">Jessore</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col s12 m4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/city-3.avif">
+                            <span class="card-title">Sylhet</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/city-2.avif">
+                            <span class="card-title">Khulna</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/city-3.avif">
+                            <span class="card-title">Cox Bazar</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/city-1.avif">
+                            <span class="card-title">Sitakundu</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- Popular Places Ends -->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
@@ -110,6 +193,15 @@
             interval:6000
         });
           
+            // autocomplete
+             const ac = document.querySelector('.autocomplete');
+             M.Autocomplete.init(ac, {
+             data : {
+             Coxbazar : null,
+             SaintMartin : null,
+             Sitakundu : null,
+          }
+        });
         </script>
 </body>
 </html>
