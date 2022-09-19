@@ -53,6 +53,15 @@
     .card {
         margin: 10px auto;
     }
+    .responsive-img{
+      margin-top: 15px;
+    }
+    .page-footer{
+      text-align: center;
+    }
+    .page-footer ul{
+      margin-left: 27% !important;
+    }
   }
 
   .red{
@@ -64,7 +73,40 @@
       margin-left: 3% !important;
     }
   }
-
   .card-title{
     font-weight: 400 !important;
+  }
+  .page-footer{
+    background-color: #2196F3;
+    position: relative;
+  }
+  .arrow{
+    transform: rotate(-180deg);
+    position: absolute;
+    right: 20px;
+    bottom: 23px;
+    color:#2196F3;
+    z-index: 2;
+  }
+  .arrow:after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    top:15px;
+    right: 15px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 600px) {  
+    .arrow{
+      right: 5px;
+      bottom: 25px;
+    }
+    .arrow:after{
+      top:13px;
+      right: 13px;
+    }
   }
